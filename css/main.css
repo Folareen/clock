@@ -5,6 +5,26 @@
   margin: 0;
 }
 
+body {
+  min-height: 100vh;
+  background-color: var(--light);
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  --light: #effbff;
+  --dark: #00204a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark {
+  --light: #00204a;
+  --dark: #effbff;
+}
+
 .theme--btn {
   position: absolute;
   top: 20px;
@@ -12,17 +32,13 @@
   width: 60px;
   height: 20px;
   border-radius: 15px;
-  background-color: #00204a;
+  background-color: var(--dark);
   border: none;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.theme--btn.bg {
-  background-color: #effbff;
 }
 
 .theme--btn .toggle {
@@ -36,26 +52,48 @@
   top: -2.5px;
   bottom: -2.5px;
   left: -2.5px;
-  background-color: #effbff;
-  border: 1px solid #00204a;
+  background-color: var(--light);
+  border: 1px solid var(--dark);
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
 
 .theme--btn .current {
-  background-color: #00204a;
-  border: 1px solid #effbff;
   left: 27.5px;
 }
 
-body {
-  background-color: #effbff;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-  height: 100vh;
+.clock--btn {
+  position: fixed;
+  top: 10vh;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 200px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  border: 2px solid var(--dark);
+  color: var(--dark);
 }
 
-body.body-bg {
-  background-color: #00204a;
+.clock--btn span {
+  padding: 10px 20px;
+  width: 50%;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.clock--btn span.current--clock {
+  background-color: #00bbf0;
+}
+
+.clock {
+  width: 200vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
 }
 /*# sourceMappingURL=main.css.map */

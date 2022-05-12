@@ -9,6 +9,24 @@
     margin: 0;
 }
 
+body{ 
+    min-height: 100vh;
+    background-color: var(--light);
+    transition: background-color 1s ease-out;
+
+    --light : #effbff;
+    --dark : #00204a;
+
+    &.dark{
+        --light: #00204a;
+        --dark : #effbff;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+
 .theme--btn{
     position: absolute;
     top: 20px;
@@ -16,15 +34,11 @@
     width: 60px;
     height: 20px;
     border-radius: 15px;
-    background-color: $dark-blue;
+    background-color: var(--dark);
     border: none;
     transition: all 1s ease-out;
 
     display: flex;
-
-    &.bg{
-        background-color: $dark-white;
-    }
 
     .toggle{
         display: inline-flex;
@@ -35,27 +49,45 @@
         top: -2.5px;
         bottom: -2.5px;
         left: -2.5px;
-        background-color: $dark-white;
-        border: 1px solid $dark-blue;
+        background-color: var(--light);
+        border: 1px solid var(--dark);
         transition: all 1s linear;
     }
 
     .current{
-        background-color: $dark-blue;
-        border: 1px solid $dark-white;
-
         left: 27.5px;
     }
 }
 
-body{
-    background-color: $dark-white;
-    transition: background-color 1s ease-out;
+.clock--btn{
+    position: fixed;
+    top: 10vh;
+    right: 50%;
+    transform: translateX(50%);
+    width: 200px;
+    border: none;
+    display: flex;
+    background: transparent;
+    border: 2px solid var(--dark);
+    color: var(--dark);
 
-    height: 100vh;
+    span{
+        padding: 10px 20px;
+        width: 50%;
+        transition: all 1s ease-in;
 
-    &.body-bg{
-        background-color: $dark-blue;
+        &.current--clock{
+            background-color: $light-blue;
+        }
     }
+
 }
 
+
+.clock{
+    width: 200vw;
+    display: flex;
+    // border: 1px solid red;
+    justify-self: center;
+
+}
