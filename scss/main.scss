@@ -1,0 +1,61 @@
+@import 'variables';
+
+@import 'analogue';
+@import 'digital';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.theme--btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: $dark-blue;
+    border: none;
+    transition: all 1s ease-out;
+
+    display: flex;
+
+    &.bg{
+        background-color: $dark-white;
+    }
+
+    .toggle{
+        display: inline-flex;
+        width: 35px;
+        height: 25px;
+        border-radius: 15px;
+        position: absolute;
+        top: -2.5px;
+        bottom: -2.5px;
+        left: -2.5px;
+        background-color: $dark-white;
+        border: 1px solid $dark-blue;
+        transition: all 1s linear;
+    }
+
+    .current{
+        background-color: $dark-blue;
+        border: 1px solid $dark-white;
+
+        left: 27.5px;
+    }
+}
+
+body{
+    background-color: $dark-white;
+    transition: background-color 1s ease-out;
+
+    height: 100vh;
+
+    &.body-bg{
+        background-color: $dark-blue;
+    }
+}
+
