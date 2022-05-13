@@ -10,6 +10,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .analogue .analogue__clock {
@@ -206,6 +210,20 @@
           transform-origin: bottom;
 }
 
+.analogue__date {
+  text-align: center;
+  color: var(--dark);
+  font-size: 32px;
+  padding: 10px;
+  width: 350px;
+  background-color: var(--light);
+  border: 5px solid #005792;
+  margin-top: -5px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -273,7 +291,7 @@ body.dark {
 
 .clock--btn {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);

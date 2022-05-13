@@ -5,6 +5,10 @@ const CLOCK_BTN = document.querySelector('.clock--btn');
 const HOUR_HAND = document.querySelector('.hour');
 const MINUTE_HAND = document.querySelector('.minute');
 const SECONDS_HAND = document.querySelector('.seconds');
+const DAY = document.querySelector('.day');
+const MONTH = document.querySelector('.month');
+const DATE = document.querySelector('.date');
+const YEAR = document.querySelector('.year');
 
 THEME_BTN.addEventListener('click', ()=>{
     TOGGLE.classList.toggle('current');
@@ -28,8 +32,19 @@ function setTime(){
 
 setInterval(
     ()=>{
-        setTime()
+        setTime();
+        setDate();
     }, 1000
 )
-
 setTime();
+
+function setDate(){
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    DAY.innerText = days[new Date().getDay()];
+    MONTH.innerText = months[new Date().getMonth()];
+    DATE.innerText = new Date().getDate();
+    YEAR.innerText = new Date().getFullYear();
+}
+setDate();

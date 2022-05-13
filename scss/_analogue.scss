@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     .analogue__clock{
         border-radius: 50%;
@@ -106,6 +107,20 @@
             transform: translateX(-50%);
             transform-origin: bottom;
         }
+    }
+
+    &__date{
+        text-align: center;
+        color: var(--dark);
+        font-size: 32px;
+        padding: 10px;
+        width: 350px;
+        background-color: var(--light);
+        border: 5px solid $blue;
+        margin-top: -5px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5);
+
     }
   
 }
