@@ -9,7 +9,8 @@
     margin: 0;
 }
 
-body{ 
+body{
+    font-family: sans-serif;
     min-height: 100vh;
     background-color: var(--light);
     transition: background-color 1s ease-out;
@@ -28,7 +29,7 @@ body{
 
 
 .theme--btn{
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     width: 60px;
@@ -85,9 +86,16 @@ body{
 
 
 .clock{
-    width: 200vw;
+    width: max-content;
+    // border: 2px solid black;
     display: flex;
-    // border: 1px solid red;
-    justify-self: center;
+    // justify-self: center;
+    // justify-content: space-between;
+    // box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5);
 
+    .digital{
+        border: 2px solid green;
+        width: 100vw;
+        height: 100%;
+    }
 }
