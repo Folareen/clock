@@ -16,7 +16,7 @@
           flex-direction: column;
 }
 
-.analogue .analogue__clock {
+.analogue__clock {
   border-radius: 50%;
   width: 350px;
   height: 350px;
@@ -26,7 +26,7 @@
   position: relative;
 }
 
-.analogue .analogue__clock::after {
+.analogue__clock::after {
   content: '';
   position: absolute;
   width: 27px;
@@ -42,7 +42,7 @@
   transition: all 1s ease-out;
 }
 
-.analogue .analogue__clock .number {
+.analogue__clock .number {
   padding-top: 2px;
   position: absolute;
   width: 100%;
@@ -57,97 +57,97 @@
   transition: color 1s ease-out;
 }
 
-.analogue .analogue__clock .number1 {
+.analogue__clock .number1 {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
 
-.analogue .analogue__clock .number2 {
+.analogue__clock .number2 {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
 
-.analogue .analogue__clock .number3 {
+.analogue__clock .number3 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.analogue .analogue__clock .number4 {
+.analogue__clock .number4 {
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
 }
 
-.analogue .analogue__clock .number5 {
+.analogue__clock .number5 {
   -webkit-transform: rotate(150deg);
           transform: rotate(150deg);
 }
 
-.analogue .analogue__clock .number6 {
+.analogue__clock .number6 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.analogue .analogue__clock .number7 {
+.analogue__clock .number7 {
   -webkit-transform: rotate(210deg);
           transform: rotate(210deg);
 }
 
-.analogue .analogue__clock .number8 {
+.analogue__clock .number8 {
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
 }
 
-.analogue .analogue__clock .number9 {
+.analogue__clock .number9 {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 
-.analogue .analogue__clock .number10 {
+.analogue__clock .number10 {
   -webkit-transform: rotate(300deg);
           transform: rotate(300deg);
 }
 
-.analogue .analogue__clock .number11 {
+.analogue__clock .number11 {
   -webkit-transform: rotate(330deg);
           transform: rotate(330deg);
 }
 
-.analogue .analogue__clock .number12 {
+.analogue__clock .number12 {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.analogue .analogue__clock .number4 span {
+.analogue__clock .number4 span {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
 
-.analogue .analogue__clock .number5 span {
+.analogue__clock .number5 span {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
 
-.analogue .analogue__clock .number6 span {
+.analogue__clock .number6 span {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
 
-.analogue .analogue__clock .number7 span {
+.analogue__clock .number7 span {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
 
-.analogue .analogue__clock .number8 span {
+.analogue__clock .number8 span {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
 
-.analogue .analogue__clock .number3, .analogue .analogue__clock .number9 {
+.analogue__clock .number3, .analogue__clock .number9 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,17 +159,17 @@
           align-items: flex-start;
 }
 
-.analogue .analogue__clock .number3 span, .analogue .analogue__clock .number9 span {
+.analogue__clock .number3 span, .analogue__clock .number9 span {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
-.analogue .analogue__clock .number9 span {
+.analogue__clock .number9 span {
   -webkit-transform: rotate(-270deg);
           transform: rotate(-270deg);
 }
 
-.analogue .analogue__clock .hour {
+.analogue__clock .hour {
   width: 9px;
   height: 75px;
   position: absolute;
@@ -184,7 +184,7 @@
           transform-origin: bottom;
 }
 
-.analogue .analogue__clock .minute {
+.analogue__clock .minute {
   width: 6px;
   height: 110px;
   position: absolute;
@@ -199,7 +199,7 @@
           transform-origin: bottom;
 }
 
-.analogue .analogue__clock .seconds {
+.analogue__clock .seconds {
   width: 3px;
   height: 150px;
   position: absolute;
@@ -217,13 +217,63 @@
 .analogue__date {
   text-align: center;
   color: var(--dark);
-  -webkit-transition: color;
-  transition: color;
   font-size: 32px;
   padding: 10px;
   width: 350px;
   border: 5px solid #005792;
   margin-top: -5px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.digital {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.digital__clock {
+  width: 350px;
+  height: 150px;
+  border: 5px solid #005792;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.digital__date {
+  text-align: center;
+  color: var(--dark);
+  font-size: 32px;
+  padding: 10px;
+  width: 350px;
+  border: 5px solid #005792;
+  margin-top: 0;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -237,6 +287,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: sans-serif;
   min-height: 100vh;
   background-color: var(--light);
@@ -290,7 +341,7 @@ body.dark {
   transition: all 1s linear;
 }
 
-.theme--btn .current {
+.theme--btn .toggle.current {
   left: 27.5px;
 }
 
@@ -313,10 +364,11 @@ body.dark {
 }
 
 .clock--btn span {
-  padding: 10px;
+  padding: 10px 0;
   width: 50%;
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
+  pointer-events: none;
 }
 
 .clock--btn span.current--clock {
@@ -330,11 +382,15 @@ body.dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
-.clock .digital {
-  border: 2px solid green;
-  width: 100vw;
-  height: 100%;
+.clock.move--clock {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
 /*# sourceMappingURL=main.css.map */
