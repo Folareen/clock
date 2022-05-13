@@ -296,6 +296,10 @@ body.dark .digital__clock__meridian {
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   font-family: sans-serif;
