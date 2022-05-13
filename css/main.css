@@ -266,6 +266,12 @@
   color: var(--dark);
 }
 
+.digital__clock__meridian {
+  color: #000a17;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
 .digital__date {
   text-align: center;
   color: var(--dark);
@@ -277,6 +283,10 @@
   border-radius: 20px;
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .digital__clock__meridian {
+  color: #bceeff;
 }
 
 *, *::before, *::after {

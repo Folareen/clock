@@ -38,7 +38,7 @@ function setTime(){
     SECONDS_HAND.style.transform = `rotateZ(${seconds * 360}deg)`;
 
     // DIGITAL
-    DIGITAL_HOUR.innerText = (new Date().getHours() > 10) ? `0${new Date().getHours() - 12}:` : `${new Date().getHours()}`;
+    DIGITAL_HOUR.innerText = (new Date().getHours() > 12) ? `0${new Date().getHours() - 12}:` : `${new Date().getHours()}:`;
 
     DIGITAL_MINUTE.innerText = (new Date().getSeconds() > 10) ? `${new Date().getMinutes()}:` : `0${new Date().getMinutes()}`;
 
