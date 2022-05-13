@@ -66,6 +66,8 @@ body{
     right: 50%;
     transform: translateX(50%);
     width: 200px;
+    font-weight: bolder;
+    font-size: 16px;
     border: none;
     display: flex;
     background: transparent;
@@ -73,7 +75,7 @@ body{
     color: var(--dark);
 
     span{
-        padding: 10px 20px;
+        padding: 10px;
         width: 50%;
         transition: all 1s ease-in;
 

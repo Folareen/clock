@@ -38,6 +38,8 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: var(--dark);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .analogue .analogue__clock .number {
@@ -51,6 +53,8 @@
   color: var(--dark);
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
 }
 
 .analogue .analogue__clock .number1 {
@@ -213,10 +217,11 @@
 .analogue__date {
   text-align: center;
   color: var(--dark);
+  -webkit-transition: color;
+  transition: color;
   font-size: 32px;
   padding: 10px;
   width: 350px;
-  background-color: var(--light);
   border: 5px solid #005792;
   margin-top: -5px;
   border-radius: 20px;
@@ -296,6 +301,8 @@ body.dark {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   width: 200px;
+  font-weight: bolder;
+  font-size: 16px;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,7 +313,7 @@ body.dark {
 }
 
 .clock--btn span {
-  padding: 10px 20px;
+  padding: 10px;
   width: 50%;
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
